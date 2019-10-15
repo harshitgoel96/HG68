@@ -1,0 +1,2725 @@
+EESchema Schematic File Version 4
+LIBS:keyboard-cache
+EELAYER 26 0
+EELAYER END
+$Descr A2 23386 16535
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L keyboard_parts:ATMEGA32U4 U1
+U 1 1 000021A1
+P 8550 8000
+F 0 "U1" H 8575 9337 60  0000 C CNN
+F 1 "ATMEGA32U4" H 8575 9231 60  0000 C CNN
+F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" H 8550 8000 60  0001 C CNN
+F 3 "" H 8550 8000 60  0000 C CNN
+	1    8550 8000
+	1    0    0    -1  
+$EndComp
+Text GLabel 7500 7650 0    50   Input ~ 0
+row0
+Text GLabel 7500 7750 0    50   Input ~ 0
+row1
+Text GLabel 7500 7850 0    50   Input ~ 0
+row2
+Text GLabel 7500 7950 0    50   Input ~ 0
+row3
+Text GLabel 9650 8550 2    50   Input ~ 0
+row4
+Text GLabel 9650 8450 2    50   Input ~ 0
+col0
+Text GLabel 9650 8350 2    50   Input ~ 0
+col1
+Text GLabel 7500 8050 0    50   Input ~ 0
+col2
+Text GLabel 9650 8250 2    50   Input ~ 0
+col3
+Text GLabel 9650 8150 2    50   Input ~ 0
+col4
+Text GLabel 7500 8650 0    50   Input ~ 0
+col5
+Text GLabel 7500 8750 0    50   Input ~ 0
+col6
+Text GLabel 7500 8850 0    50   Input ~ 0
+col7
+Text GLabel 7500 8950 0    50   Input ~ 0
+col8
+Text GLabel 9650 8850 2    50   Input ~ 0
+col9
+Text GLabel 7500 9050 0    50   Input ~ 0
+col10
+Text GLabel 9650 8750 2    50   Input ~ 0
+col11
+Text GLabel 9650 8650 2    50   Input ~ 0
+col12
+Text GLabel 9650 7250 2    50   Input ~ 0
+col13
+Text GLabel 9650 7350 2    50   Input ~ 0
+col14
+Text GLabel 9650 7450 2    50   Input ~ 0
+col15
+Text GLabel 9650 7550 2    50   Input ~ 0
+col16
+$Comp
+L keyboard_parts:USB_mini_micro_B J1
+U 1 1 000014A1
+P 6350 7200
+F 0 "J1" H 6232 7491 60  0000 C CNN
+F 1 "USB_mini_micro_B" H 6200 7400 60  0001 C CNN
+F 2 "keyboard_parts:USB_miniB_hirose_5S8" H 6300 7200 60  0001 C CNN
+F 3 "" H 6300 7200 60  0000 C CNN
+	1    6350 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 000037B1
+P 7200 7150
+F 0 "R3" V 7200 7100 39  0000 C CNN
+F 1 "22" V 7200 7200 39  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7130 7150 50  0001 C CNN
+F 3 "~" H 7200 7150 50  0001 C CNN
+	1    7200 7150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5DAB33AB
+P 7200 7250
+F 0 "R4" V 7200 7200 39  0000 C CNN
+F 1 "22" V 7200 7300 39  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7130 7250 50  0001 C CNN
+F 3 "~" H 7200 7250 50  0001 C CNN
+	1    7200 7250
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR0107
+U 1 1 000013C1
+P 6850 6850
+F 0 "#PWR0107" H 6850 6700 50  0001 C CNN
+F 1 "VCC" H 6867 7023 50  0000 C CNN
+F 2 "" H 6850 6850 50  0001 C CNN
+F 3 "" H 6850 6850 50  0001 C CNN
+	1    6850 6850
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7500 6950
+Text GLabel 900  1400 0    50   Input ~ 0
+row0
+Wire Wire Line
+	900  1400 1150 1400
+Text GLabel 1800 650  0    50   Input ~ 0
+col0
+Wire Wire Line
+	1800 650  1800 1000
+$Comp
+L keyboard_parts:KEYSW K_&lt;I_E1
+U 1 1 00000001
+P 1500 1000
+F 0 "K_&lt;I_E1" H 1500 1233 60  0000 C CNN
+F 1 "KEYSW" H 1500 900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 1500 1000 60  0001 C CNN
+F 3 "" H 1500 1000 60  0000 C CNN
+	1    1500 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_&lt;I_E1
+U 1 1 00000000
+P 1150 1250
+F 0 "D_&lt;I_E1" V 1196 1171 50  0000 R CNN
+F 1 "D" V 1095 1171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 1150 1250 50  0001 C CNN
+F 3 "~" H 1150 1250 50  0001 C CNN
+	1    1150 1250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1200 1000 1150 1000
+Wire Wire Line
+	1150 1000 1150 1100
+Connection ~ 1800 1000
+Connection ~ 1150 1400
+Text GLabel 2800 650  0    50   Input ~ 0
+col1
+Wire Wire Line
+	2800 650  2800 1000
+$Comp
+L keyboard_parts:KEYSW K_1
+U 1 1 00000011
+P 2500 1000
+F 0 "K_1" H 2500 1233 60  0000 C CNN
+F 1 "KEYSW" H 2500 900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 2500 1000 60  0001 C CNN
+F 3 "" H 2500 1000 60  0000 C CNN
+	1    2500 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_1
+U 1 1 00000010
+P 2150 1250
+F 0 "D_1" V 2196 1171 50  0000 R CNN
+F 1 "D" V 2095 1171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 2150 1250 50  0001 C CNN
+F 3 "~" H 2150 1250 50  0001 C CNN
+	1    2150 1250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2200 1000 2150 1000
+Wire Wire Line
+	2150 1000 2150 1100
+Connection ~ 2800 1000
+Connection ~ 2150 1400
+Text GLabel 3800 650  0    50   Input ~ 0
+col2
+Wire Wire Line
+	3800 650  3800 1000
+$Comp
+L keyboard_parts:KEYSW K_2
+U 1 1 00000021
+P 3500 1000
+F 0 "K_2" H 3500 1233 60  0000 C CNN
+F 1 "KEYSW" H 3500 900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 3500 1000 60  0001 C CNN
+F 3 "" H 3500 1000 60  0000 C CNN
+	1    3500 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_2
+U 1 1 00000020
+P 3150 1250
+F 0 "D_2" V 3196 1171 50  0000 R CNN
+F 1 "D" V 3095 1171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 3150 1250 50  0001 C CNN
+F 3 "~" H 3150 1250 50  0001 C CNN
+	1    3150 1250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3200 1000 3150 1000
+Wire Wire Line
+	3150 1000 3150 1100
+Connection ~ 3800 1000
+Connection ~ 3150 1400
+Text GLabel 4800 650  0    50   Input ~ 0
+col3
+Wire Wire Line
+	4800 650  4800 1000
+$Comp
+L keyboard_parts:KEYSW K_3
+U 1 1 00000031
+P 4500 1000
+F 0 "K_3" H 4500 1233 60  0000 C CNN
+F 1 "KEYSW" H 4500 900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 4500 1000 60  0001 C CNN
+F 3 "" H 4500 1000 60  0000 C CNN
+	1    4500 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_3
+U 1 1 00000030
+P 4150 1250
+F 0 "D_3" V 4196 1171 50  0000 R CNN
+F 1 "D" V 4095 1171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 4150 1250 50  0001 C CNN
+F 3 "~" H 4150 1250 50  0001 C CNN
+	1    4150 1250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4200 1000 4150 1000
+Wire Wire Line
+	4150 1000 4150 1100
+Connection ~ 4800 1000
+Connection ~ 4150 1400
+Text GLabel 5800 650  0    50   Input ~ 0
+col4
+Wire Wire Line
+	5800 650  5800 1000
+$Comp
+L keyboard_parts:KEYSW K_4
+U 1 1 00000041
+P 5500 1000
+F 0 "K_4" H 5500 1233 60  0000 C CNN
+F 1 "KEYSW" H 5500 900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 5500 1000 60  0001 C CNN
+F 3 "" H 5500 1000 60  0000 C CNN
+	1    5500 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_4
+U 1 1 00000040
+P 5150 1250
+F 0 "D_4" V 5196 1171 50  0000 R CNN
+F 1 "D" V 5095 1171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 5150 1250 50  0001 C CNN
+F 3 "~" H 5150 1250 50  0001 C CNN
+	1    5150 1250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5200 1000 5150 1000
+Wire Wire Line
+	5150 1000 5150 1100
+Connection ~ 5800 1000
+Connection ~ 5150 1400
+Text GLabel 6800 650  0    50   Input ~ 0
+col5
+Wire Wire Line
+	6800 650  6800 1000
+$Comp
+L keyboard_parts:KEYSW K_5
+U 1 1 00000051
+P 6500 1000
+F 0 "K_5" H 6500 1233 60  0000 C CNN
+F 1 "KEYSW" H 6500 900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 6500 1000 60  0001 C CNN
+F 3 "" H 6500 1000 60  0000 C CNN
+	1    6500 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_5
+U 1 1 00000050
+P 6150 1250
+F 0 "D_5" V 6196 1171 50  0000 R CNN
+F 1 "D" V 6095 1171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 6150 1250 50  0001 C CNN
+F 3 "~" H 6150 1250 50  0001 C CNN
+	1    6150 1250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6200 1000 6150 1000
+Wire Wire Line
+	6150 1000 6150 1100
+Connection ~ 6800 1000
+Connection ~ 6150 1400
+Text GLabel 7800 650  0    50   Input ~ 0
+col6
+Wire Wire Line
+	7800 650  7800 1000
+$Comp
+L keyboard_parts:KEYSW K_6
+U 1 1 00000061
+P 7500 1000
+F 0 "K_6" H 7500 1233 60  0000 C CNN
+F 1 "KEYSW" H 7500 900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 7500 1000 60  0001 C CNN
+F 3 "" H 7500 1000 60  0000 C CNN
+	1    7500 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_6
+U 1 1 00000060
+P 7150 1250
+F 0 "D_6" V 7196 1171 50  0000 R CNN
+F 1 "D" V 7095 1171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 7150 1250 50  0001 C CNN
+F 3 "~" H 7150 1250 50  0001 C CNN
+	1    7150 1250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7200 1000 7150 1000
+Wire Wire Line
+	7150 1000 7150 1100
+Connection ~ 7800 1000
+Connection ~ 7150 1400
+Text GLabel 8800 650  0    50   Input ~ 0
+col7
+Wire Wire Line
+	8800 650  8800 1000
+$Comp
+L keyboard_parts:KEYSW K_7
+U 1 1 00000071
+P 8500 1000
+F 0 "K_7" H 8500 1233 60  0000 C CNN
+F 1 "KEYSW" H 8500 900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 8500 1000 60  0001 C CNN
+F 3 "" H 8500 1000 60  0000 C CNN
+	1    8500 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_7
+U 1 1 00000070
+P 8150 1250
+F 0 "D_7" V 8196 1171 50  0000 R CNN
+F 1 "D" V 8095 1171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 8150 1250 50  0001 C CNN
+F 3 "~" H 8150 1250 50  0001 C CNN
+	1    8150 1250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8200 1000 8150 1000
+Wire Wire Line
+	8150 1000 8150 1100
+Connection ~ 8800 1000
+Connection ~ 8150 1400
+Text GLabel 9800 650  0    50   Input ~ 0
+col8
+Wire Wire Line
+	9800 650  9800 1000
+$Comp
+L keyboard_parts:KEYSW K_8
+U 1 1 00000081
+P 9500 1000
+F 0 "K_8" H 9500 1233 60  0000 C CNN
+F 1 "KEYSW" H 9500 900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 9500 1000 60  0001 C CNN
+F 3 "" H 9500 1000 60  0000 C CNN
+	1    9500 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_8
+U 1 1 00000080
+P 9150 1250
+F 0 "D_8" V 9196 1171 50  0000 R CNN
+F 1 "D" V 9095 1171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 9150 1250 50  0001 C CNN
+F 3 "~" H 9150 1250 50  0001 C CNN
+	1    9150 1250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9200 1000 9150 1000
+Wire Wire Line
+	9150 1000 9150 1100
+Connection ~ 9800 1000
+Connection ~ 9150 1400
+Text GLabel 10800 650  0    50   Input ~ 0
+col9
+Wire Wire Line
+	10800 650  10800 1000
+$Comp
+L keyboard_parts:KEYSW K_9
+U 1 1 00000091
+P 10500 1000
+F 0 "K_9" H 10500 1233 60  0000 C CNN
+F 1 "KEYSW" H 10500 900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 10500 1000 60  0001 C CNN
+F 3 "" H 10500 1000 60  0000 C CNN
+	1    10500 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_9
+U 1 1 00000090
+P 10150 1250
+F 0 "D_9" V 10196 1171 50  0000 R CNN
+F 1 "D" V 10095 1171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 10150 1250 50  0001 C CNN
+F 3 "~" H 10150 1250 50  0001 C CNN
+	1    10150 1250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10200 1000 10150 1000
+Wire Wire Line
+	10150 1000 10150 1100
+Connection ~ 10800 1000
+Connection ~ 10150 1400
+Text GLabel 11800 650  0    50   Input ~ 0
+col10
+Wire Wire Line
+	11800 650  11800 1000
+$Comp
+L keyboard_parts:KEYSW K_0
+U 1 1 000000A1
+P 11500 1000
+F 0 "K_0" H 11500 1233 60  0000 C CNN
+F 1 "KEYSW" H 11500 900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 11500 1000 60  0001 C CNN
+F 3 "" H 11500 1000 60  0000 C CNN
+	1    11500 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_0
+U 1 1 000000A0
+P 11150 1250
+F 0 "D_0" V 11196 1171 50  0000 R CNN
+F 1 "D" V 11095 1171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 11150 1250 50  0001 C CNN
+F 3 "~" H 11150 1250 50  0001 C CNN
+	1    11150 1250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	11200 1000 11150 1000
+Wire Wire Line
+	11150 1000 11150 1100
+Connection ~ 11800 1000
+Connection ~ 11150 1400
+Text GLabel 12800 650  0    50   Input ~ 0
+col11
+Wire Wire Line
+	12800 650  12800 1000
+$Comp
+L keyboard_parts:KEYSW K_MINUS1
+U 1 1 000000B1
+P 12500 1000
+F 0 "K_MINUS1" H 12500 1233 60  0000 C CNN
+F 1 "KEYSW" H 12500 900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 12500 1000 60  0001 C CNN
+F 3 "" H 12500 1000 60  0000 C CNN
+	1    12500 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_MINUS1
+U 1 1 000000B0
+P 12150 1250
+F 0 "D_MINUS1" V 12196 1171 50  0000 R CNN
+F 1 "D" V 12095 1171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 12150 1250 50  0001 C CNN
+F 3 "~" H 12150 1250 50  0001 C CNN
+	1    12150 1250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	12200 1000 12150 1000
+Wire Wire Line
+	12150 1000 12150 1100
+Connection ~ 12800 1000
+Connection ~ 12150 1400
+Text GLabel 13800 650  0    50   Input ~ 0
+col12
+Wire Wire Line
+	13800 650  13800 1000
+$Comp
+L keyboard_parts:KEYSW K_EQUAL1
+U 1 1 000000C1
+P 13500 1000
+F 0 "K_EQUAL1" H 13500 1233 60  0000 C CNN
+F 1 "KEYSW" H 13500 900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 13500 1000 60  0001 C CNN
+F 3 "" H 13500 1000 60  0000 C CNN
+	1    13500 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_EQUAL1
+U 1 1 000000C0
+P 13150 1250
+F 0 "D_EQUAL1" V 13196 1171 50  0000 R CNN
+F 1 "D" V 13095 1171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 13150 1250 50  0001 C CNN
+F 3 "~" H 13150 1250 50  0001 C CNN
+	1    13150 1250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	13200 1000 13150 1000
+Wire Wire Line
+	13150 1000 13150 1100
+Connection ~ 13800 1000
+Connection ~ 13150 1400
+Text GLabel 14800 650  0    50   Input ~ 0
+col13
+Wire Wire Line
+	14800 650  14800 1000
+$Comp
+L keyboard_parts:KEYSW K_BSLSH1
+U 1 1 000000D1
+P 14500 1000
+F 0 "K_BSLSH1" H 14500 1233 60  0000 C CNN
+F 1 "KEYSW" H 14500 900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 14500 1000 60  0001 C CNN
+F 3 "" H 14500 1000 60  0000 C CNN
+	1    14500 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_BSLSH1
+U 1 1 000000D0
+P 14150 1250
+F 0 "D_BSLSH1" V 14196 1171 50  0000 R CNN
+F 1 "D" V 14095 1171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 14150 1250 50  0001 C CNN
+F 3 "~" H 14150 1250 50  0001 C CNN
+	1    14150 1250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	14200 1000 14150 1000
+Wire Wire Line
+	14150 1000 14150 1100
+Connection ~ 14800 1000
+Connection ~ 14150 1400
+Text GLabel 15800 650  0    50   Input ~ 0
+col14
+Wire Wire Line
+	15800 650  15800 1000
+$Comp
+L keyboard_parts:KEYSW K_`1
+U 1 1 000000E1
+P 15500 1000
+F 0 "K_`1" H 15500 1233 60  0000 C CNN
+F 1 "KEYSW" H 15500 900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 15500 1000 60  0001 C CNN
+F 3 "" H 15500 1000 60  0000 C CNN
+	1    15500 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_`1
+U 1 1 000000E0
+P 15150 1250
+F 0 "D_`1" V 15196 1171 50  0000 R CNN
+F 1 "D" V 15095 1171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 15150 1250 50  0001 C CNN
+F 3 "~" H 15150 1250 50  0001 C CNN
+	1    15150 1250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	15200 1000 15150 1000
+Wire Wire Line
+	15150 1000 15150 1100
+Connection ~ 15800 1000
+Connection ~ 15150 1400
+Text GLabel 16800 650  0    50   Input ~ 0
+col15
+Wire Wire Line
+	16800 650  16800 1000
+$Comp
+L keyboard_parts:KEYSW K_INSERT1
+U 1 1 000000F1
+P 16500 1000
+F 0 "K_INSERT1" H 16500 1233 60  0000 C CNN
+F 1 "KEYSW" H 16500 900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 16500 1000 60  0001 C CNN
+F 3 "" H 16500 1000 60  0000 C CNN
+	1    16500 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_INSERT1
+U 1 1 000000F0
+P 16150 1250
+F 0 "D_INSERT1" V 16196 1171 50  0000 R CNN
+F 1 "D" V 16095 1171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 16150 1250 50  0001 C CNN
+F 3 "~" H 16150 1250 50  0001 C CNN
+	1    16150 1250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	16200 1000 16150 1000
+Wire Wire Line
+	16150 1000 16150 1100
+Connection ~ 16800 1000
+Connection ~ 16150 1400
+Text GLabel 17800 650  0    50   Input ~ 0
+col16
+Wire Wire Line
+	17800 650  17800 1000
+$Comp
+L keyboard_parts:KEYSW K_HOME1
+U 1 1 00000101
+P 17500 1000
+F 0 "K_HOME1" H 17500 1233 60  0000 C CNN
+F 1 "KEYSW" H 17500 900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 17500 1000 60  0001 C CNN
+F 3 "" H 17500 1000 60  0000 C CNN
+	1    17500 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_HOME1
+U 1 1 00000100
+P 17150 1250
+F 0 "D_HOME1" V 17196 1171 50  0000 R CNN
+F 1 "D" V 17095 1171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 17150 1250 50  0001 C CNN
+F 3 "~" H 17150 1250 50  0001 C CNN
+	1    17150 1250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	17200 1000 17150 1000
+Wire Wire Line
+	17150 1000 17150 1100
+Connection ~ 17800 1000
+Wire Wire Line
+	1150 1400 2150 1400
+Text GLabel 900  2400 0    50   Input ~ 0
+row1
+Wire Wire Line
+	900  2400 1150 2400
+$Comp
+L keyboard_parts:KEYSW K_TAB1
+U 1 1 00000111
+P 1500 2000
+F 0 "K_TAB1" H 1500 2233 60  0000 C CNN
+F 1 "KEYSW" H 1500 1900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1.5U-NoLED" H 1500 2000 60  0001 C CNN
+F 3 "" H 1500 2000 60  0000 C CNN
+	1    1500 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_TAB1
+U 1 1 00000110
+P 1150 2250
+F 0 "D_TAB1" V 1196 2171 50  0000 R CNN
+F 1 "D" V 1095 2171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 1150 2250 50  0001 C CNN
+F 3 "~" H 1150 2250 50  0001 C CNN
+	1    1150 2250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1200 2000 1150 2000
+Wire Wire Line
+	1150 2000 1150 2100
+Connection ~ 1800 2000
+Connection ~ 1150 2400
+$Comp
+L keyboard_parts:KEYSW K_Q1
+U 1 1 00000121
+P 3500 2000
+F 0 "K_Q1" H 3500 2233 60  0000 C CNN
+F 1 "KEYSW" H 3500 1900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 3500 2000 60  0001 C CNN
+F 3 "" H 3500 2000 60  0000 C CNN
+	1    3500 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_Q1
+U 1 1 00000120
+P 3150 2250
+F 0 "D_Q1" V 3196 2171 50  0000 R CNN
+F 1 "D" V 3095 2171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 3150 2250 50  0001 C CNN
+F 3 "~" H 3150 2250 50  0001 C CNN
+	1    3150 2250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3200 2000 3150 2000
+Wire Wire Line
+	3150 2000 3150 2100
+Connection ~ 3800 2000
+Connection ~ 3150 2400
+$Comp
+L keyboard_parts:KEYSW K_W1
+U 1 1 00000131
+P 4500 2000
+F 0 "K_W1" H 4500 2233 60  0000 C CNN
+F 1 "KEYSW" H 4500 1900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 4500 2000 60  0001 C CNN
+F 3 "" H 4500 2000 60  0000 C CNN
+	1    4500 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_W1
+U 1 1 00000130
+P 4150 2250
+F 0 "D_W1" V 4196 2171 50  0000 R CNN
+F 1 "D" V 4095 2171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 4150 2250 50  0001 C CNN
+F 3 "~" H 4150 2250 50  0001 C CNN
+	1    4150 2250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4200 2000 4150 2000
+Wire Wire Line
+	4150 2000 4150 2100
+Connection ~ 4800 2000
+Connection ~ 4150 2400
+$Comp
+L keyboard_parts:KEYSW K_E1
+U 1 1 00000141
+P 5500 2000
+F 0 "K_E1" H 5500 2233 60  0000 C CNN
+F 1 "KEYSW" H 5500 1900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 5500 2000 60  0001 C CNN
+F 3 "" H 5500 2000 60  0000 C CNN
+	1    5500 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_E1
+U 1 1 00000140
+P 5150 2250
+F 0 "D_E1" V 5196 2171 50  0000 R CNN
+F 1 "D" V 5095 2171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 5150 2250 50  0001 C CNN
+F 3 "~" H 5150 2250 50  0001 C CNN
+	1    5150 2250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5200 2000 5150 2000
+Wire Wire Line
+	5150 2000 5150 2100
+Connection ~ 5800 2000
+Connection ~ 5150 2400
+$Comp
+L keyboard_parts:KEYSW K_R1
+U 1 1 00000151
+P 6500 2000
+F 0 "K_R1" H 6500 2233 60  0000 C CNN
+F 1 "KEYSW" H 6500 1900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 6500 2000 60  0001 C CNN
+F 3 "" H 6500 2000 60  0000 C CNN
+	1    6500 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_R1
+U 1 1 00000150
+P 6150 2250
+F 0 "D_R1" V 6196 2171 50  0000 R CNN
+F 1 "D" V 6095 2171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 6150 2250 50  0001 C CNN
+F 3 "~" H 6150 2250 50  0001 C CNN
+	1    6150 2250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6200 2000 6150 2000
+Wire Wire Line
+	6150 2000 6150 2100
+Connection ~ 6800 2000
+Connection ~ 6150 2400
+$Comp
+L keyboard_parts:KEYSW K_T1
+U 1 1 00000161
+P 7500 2000
+F 0 "K_T1" H 7500 2233 60  0000 C CNN
+F 1 "KEYSW" H 7500 1900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 7500 2000 60  0001 C CNN
+F 3 "" H 7500 2000 60  0000 C CNN
+	1    7500 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_T1
+U 1 1 00000160
+P 7150 2250
+F 0 "D_T1" V 7196 2171 50  0000 R CNN
+F 1 "D" V 7095 2171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 7150 2250 50  0001 C CNN
+F 3 "~" H 7150 2250 50  0001 C CNN
+	1    7150 2250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7200 2000 7150 2000
+Wire Wire Line
+	7150 2000 7150 2100
+Connection ~ 7800 2000
+Connection ~ 7150 2400
+$Comp
+L keyboard_parts:KEYSW K_Y1
+U 1 1 00000171
+P 8500 2000
+F 0 "K_Y1" H 8500 2233 60  0000 C CNN
+F 1 "KEYSW" H 8500 1900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 8500 2000 60  0001 C CNN
+F 3 "" H 8500 2000 60  0000 C CNN
+	1    8500 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_Y1
+U 1 1 00000170
+P 8150 2250
+F 0 "D_Y1" V 8196 2171 50  0000 R CNN
+F 1 "D" V 8095 2171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 8150 2250 50  0001 C CNN
+F 3 "~" H 8150 2250 50  0001 C CNN
+	1    8150 2250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8200 2000 8150 2000
+Wire Wire Line
+	8150 2000 8150 2100
+Connection ~ 8800 2000
+Connection ~ 8150 2400
+$Comp
+L keyboard_parts:KEYSW K_U1
+U 1 1 00000181
+P 9500 2000
+F 0 "K_U1" H 9500 2233 60  0000 C CNN
+F 1 "KEYSW" H 9500 1900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 9500 2000 60  0001 C CNN
+F 3 "" H 9500 2000 60  0000 C CNN
+	1    9500 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_U1
+U 1 1 00000180
+P 9150 2250
+F 0 "D_U1" V 9196 2171 50  0000 R CNN
+F 1 "D" V 9095 2171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 9150 2250 50  0001 C CNN
+F 3 "~" H 9150 2250 50  0001 C CNN
+	1    9150 2250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9200 2000 9150 2000
+Wire Wire Line
+	9150 2000 9150 2100
+Connection ~ 9800 2000
+Connection ~ 9150 2400
+$Comp
+L keyboard_parts:KEYSW K_I1
+U 1 1 00000191
+P 10500 2000
+F 0 "K_I1" H 10500 2233 60  0000 C CNN
+F 1 "KEYSW" H 10500 1900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 10500 2000 60  0001 C CNN
+F 3 "" H 10500 2000 60  0000 C CNN
+	1    10500 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_I1
+U 1 1 00000190
+P 10150 2250
+F 0 "D_I1" V 10196 2171 50  0000 R CNN
+F 1 "D" V 10095 2171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 10150 2250 50  0001 C CNN
+F 3 "~" H 10150 2250 50  0001 C CNN
+	1    10150 2250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10200 2000 10150 2000
+Wire Wire Line
+	10150 2000 10150 2100
+Connection ~ 10800 2000
+Connection ~ 10150 2400
+$Comp
+L keyboard_parts:KEYSW K_O1
+U 1 1 000001A1
+P 11500 2000
+F 0 "K_O1" H 11500 2233 60  0000 C CNN
+F 1 "KEYSW" H 11500 1900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 11500 2000 60  0001 C CNN
+F 3 "" H 11500 2000 60  0000 C CNN
+	1    11500 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_O1
+U 1 1 000001A0
+P 11150 2250
+F 0 "D_O1" V 11196 2171 50  0000 R CNN
+F 1 "D" V 11095 2171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 11150 2250 50  0001 C CNN
+F 3 "~" H 11150 2250 50  0001 C CNN
+	1    11150 2250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	11200 2000 11150 2000
+Wire Wire Line
+	11150 2000 11150 2100
+Connection ~ 11800 2000
+Connection ~ 11150 2400
+$Comp
+L keyboard_parts:KEYSW K_P1
+U 1 1 000001B1
+P 12500 2000
+F 0 "K_P1" H 12500 2233 60  0000 C CNN
+F 1 "KEYSW" H 12500 1900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 12500 2000 60  0001 C CNN
+F 3 "" H 12500 2000 60  0000 C CNN
+	1    12500 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_P1
+U 1 1 000001B0
+P 12150 2250
+F 0 "D_P1" V 12196 2171 50  0000 R CNN
+F 1 "D" V 12095 2171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 12150 2250 50  0001 C CNN
+F 3 "~" H 12150 2250 50  0001 C CNN
+	1    12150 2250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	12200 2000 12150 2000
+Wire Wire Line
+	12150 2000 12150 2100
+Connection ~ 12800 2000
+Connection ~ 12150 2400
+$Comp
+L keyboard_parts:KEYSW K_CBRAC1
+U 1 1 000001C1
+P 13500 2000
+F 0 "K_CBRAC1" H 13500 2233 60  0000 C CNN
+F 1 "KEYSW" H 13500 1900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 13500 2000 60  0001 C CNN
+F 3 "" H 13500 2000 60  0000 C CNN
+	1    13500 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_CBRAC1
+U 1 1 000001C0
+P 13150 2250
+F 0 "D_CBRAC1" V 13196 2171 50  0000 R CNN
+F 1 "D" V 13095 2171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 13150 2250 50  0001 C CNN
+F 3 "~" H 13150 2250 50  0001 C CNN
+	1    13150 2250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	13200 2000 13150 2000
+Wire Wire Line
+	13150 2000 13150 2100
+Connection ~ 13800 2000
+Connection ~ 13150 2400
+$Comp
+L keyboard_parts:KEYSW K_OBRAC1
+U 1 1 000001D1
+P 14500 2000
+F 0 "K_OBRAC1" H 14500 2233 60  0000 C CNN
+F 1 "KEYSW" H 14500 1900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 14500 2000 60  0001 C CNN
+F 3 "" H 14500 2000 60  0000 C CNN
+	1    14500 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_OBRAC1
+U 1 1 000001D0
+P 14150 2250
+F 0 "D_OBRAC1" V 14196 2171 50  0000 R CNN
+F 1 "D" V 14095 2171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 14150 2250 50  0001 C CNN
+F 3 "~" H 14150 2250 50  0001 C CNN
+	1    14150 2250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	14200 2000 14150 2000
+Wire Wire Line
+	14150 2000 14150 2100
+Connection ~ 14800 2000
+Connection ~ 14150 2400
+$Comp
+L keyboard_parts:KEYSW K_&lt;I1
+U 1 1 000001E1
+P 15500 2000
+F 0 "K_&lt;I1" H 15500 2233 60  0000 C CNN
+F 1 "KEYSW" H 15500 1900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1.5U-NoLED" H 15500 2000 60  0001 C CNN
+F 3 "" H 15500 2000 60  0000 C CNN
+	1    15500 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_&lt;I1
+U 1 1 000001E0
+P 15150 2250
+F 0 "D_&lt;I1" V 15196 2171 50  0000 R CNN
+F 1 "D" V 15095 2171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 15150 2250 50  0001 C CNN
+F 3 "~" H 15150 2250 50  0001 C CNN
+	1    15150 2250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	15200 2000 15150 2000
+Wire Wire Line
+	15150 2000 15150 2100
+Connection ~ 15800 2000
+Connection ~ 15150 2400
+$Comp
+L keyboard_parts:KEYSW K_DELETE1
+U 1 1 000001F1
+P 16500 2000
+F 0 "K_DELETE1" H 16500 2233 60  0000 C CNN
+F 1 "KEYSW" H 16500 1900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 16500 2000 60  0001 C CNN
+F 3 "" H 16500 2000 60  0000 C CNN
+	1    16500 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_DELETE1
+U 1 1 000001F0
+P 16150 2250
+F 0 "D_DELETE1" V 16196 2171 50  0000 R CNN
+F 1 "D" V 16095 2171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 16150 2250 50  0001 C CNN
+F 3 "~" H 16150 2250 50  0001 C CNN
+	1    16150 2250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	16200 2000 16150 2000
+Wire Wire Line
+	16150 2000 16150 2100
+Connection ~ 16800 2000
+Connection ~ 16150 2400
+$Comp
+L keyboard_parts:KEYSW K_END1
+U 1 1 00000201
+P 17500 2000
+F 0 "K_END1" H 17500 2233 60  0000 C CNN
+F 1 "KEYSW" H 17500 1900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 17500 2000 60  0001 C CNN
+F 3 "" H 17500 2000 60  0000 C CNN
+	1    17500 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_END1
+U 1 1 00000200
+P 17150 2250
+F 0 "D_END1" V 17196 2171 50  0000 R CNN
+F 1 "D" V 17095 2171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 17150 2250 50  0001 C CNN
+F 3 "~" H 17150 2250 50  0001 C CNN
+	1    17150 2250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	17200 2000 17150 2000
+Wire Wire Line
+	17150 2000 17150 2100
+Connection ~ 17800 2000
+Wire Wire Line
+	1150 2400 3150 2400
+Text GLabel 900  3400 0    50   Input ~ 0
+row2
+Wire Wire Line
+	900  3400 1150 3400
+$Comp
+L keyboard_parts:KEYSW K_CAPS1
+U 1 1 00000211
+P 1500 3000
+F 0 "K_CAPS1" H 1500 3233 60  0000 C CNN
+F 1 "KEYSW" H 1500 2900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1.25U-NoLED" H 1500 3000 60  0001 C CNN
+F 3 "" H 1500 3000 60  0000 C CNN
+	1    1500 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_CAPS1
+U 1 1 00000210
+P 1150 3250
+F 0 "D_CAPS1" V 1196 3171 50  0000 R CNN
+F 1 "D" V 1095 3171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 1150 3250 50  0001 C CNN
+F 3 "~" H 1150 3250 50  0001 C CNN
+	1    1150 3250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1200 3000 1150 3000
+Wire Wire Line
+	1150 3000 1150 3100
+Connection ~ 1800 3000
+Connection ~ 1150 3400
+$Comp
+L keyboard_parts:KEYSW K_A1
+U 1 1 00000221
+P 3500 3000
+F 0 "K_A1" H 3500 3233 60  0000 C CNN
+F 1 "KEYSW" H 3500 2900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 3500 3000 60  0001 C CNN
+F 3 "" H 3500 3000 60  0000 C CNN
+	1    3500 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_A1
+U 1 1 00000220
+P 3150 3250
+F 0 "D_A1" V 3196 3171 50  0000 R CNN
+F 1 "D" V 3095 3171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 3150 3250 50  0001 C CNN
+F 3 "~" H 3150 3250 50  0001 C CNN
+	1    3150 3250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3200 3000 3150 3000
+Wire Wire Line
+	3150 3000 3150 3100
+Connection ~ 3800 3000
+Connection ~ 3150 3400
+$Comp
+L keyboard_parts:KEYSW K_S1
+U 1 1 00000231
+P 4500 3000
+F 0 "K_S1" H 4500 3233 60  0000 C CNN
+F 1 "KEYSW" H 4500 2900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 4500 3000 60  0001 C CNN
+F 3 "" H 4500 3000 60  0000 C CNN
+	1    4500 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_S1
+U 1 1 00000230
+P 4150 3250
+F 0 "D_S1" V 4196 3171 50  0000 R CNN
+F 1 "D" V 4095 3171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 4150 3250 50  0001 C CNN
+F 3 "~" H 4150 3250 50  0001 C CNN
+	1    4150 3250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4200 3000 4150 3000
+Wire Wire Line
+	4150 3000 4150 3100
+Connection ~ 4800 3000
+Connection ~ 4150 3400
+$Comp
+L keyboard_parts:KEYSW K_D1
+U 1 1 00000241
+P 5500 3000
+F 0 "K_D1" H 5500 3233 60  0000 C CNN
+F 1 "KEYSW" H 5500 2900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 5500 3000 60  0001 C CNN
+F 3 "" H 5500 3000 60  0000 C CNN
+	1    5500 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_D1
+U 1 1 00000240
+P 5150 3250
+F 0 "D_D1" V 5196 3171 50  0000 R CNN
+F 1 "D" V 5095 3171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 5150 3250 50  0001 C CNN
+F 3 "~" H 5150 3250 50  0001 C CNN
+	1    5150 3250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5200 3000 5150 3000
+Wire Wire Line
+	5150 3000 5150 3100
+Connection ~ 5800 3000
+Connection ~ 5150 3400
+$Comp
+L keyboard_parts:KEYSW K_F1
+U 1 1 00000251
+P 6500 3000
+F 0 "K_F1" H 6500 3233 60  0000 C CNN
+F 1 "KEYSW" H 6500 2900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 6500 3000 60  0001 C CNN
+F 3 "" H 6500 3000 60  0000 C CNN
+	1    6500 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_F1
+U 1 1 00000250
+P 6150 3250
+F 0 "D_F1" V 6196 3171 50  0000 R CNN
+F 1 "D" V 6095 3171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 6150 3250 50  0001 C CNN
+F 3 "~" H 6150 3250 50  0001 C CNN
+	1    6150 3250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6200 3000 6150 3000
+Wire Wire Line
+	6150 3000 6150 3100
+Connection ~ 6800 3000
+Connection ~ 6150 3400
+$Comp
+L keyboard_parts:KEYSW K_G1
+U 1 1 00000261
+P 7500 3000
+F 0 "K_G1" H 7500 3233 60  0000 C CNN
+F 1 "KEYSW" H 7500 2900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 7500 3000 60  0001 C CNN
+F 3 "" H 7500 3000 60  0000 C CNN
+	1    7500 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_G1
+U 1 1 00000260
+P 7150 3250
+F 0 "D_G1" V 7196 3171 50  0000 R CNN
+F 1 "D" V 7095 3171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 7150 3250 50  0001 C CNN
+F 3 "~" H 7150 3250 50  0001 C CNN
+	1    7150 3250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7200 3000 7150 3000
+Wire Wire Line
+	7150 3000 7150 3100
+Connection ~ 7800 3000
+Connection ~ 7150 3400
+$Comp
+L keyboard_parts:KEYSW K_H1
+U 1 1 00000271
+P 8500 3000
+F 0 "K_H1" H 8500 3233 60  0000 C CNN
+F 1 "KEYSW" H 8500 2900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 8500 3000 60  0001 C CNN
+F 3 "" H 8500 3000 60  0000 C CNN
+	1    8500 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_H1
+U 1 1 00000270
+P 8150 3250
+F 0 "D_H1" V 8196 3171 50  0000 R CNN
+F 1 "D" V 8095 3171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 8150 3250 50  0001 C CNN
+F 3 "~" H 8150 3250 50  0001 C CNN
+	1    8150 3250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8200 3000 8150 3000
+Wire Wire Line
+	8150 3000 8150 3100
+Connection ~ 8800 3000
+Connection ~ 8150 3400
+$Comp
+L keyboard_parts:KEYSW K_J1
+U 1 1 00000281
+P 9500 3000
+F 0 "K_J1" H 9500 3233 60  0000 C CNN
+F 1 "KEYSW" H 9500 2900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 9500 3000 60  0001 C CNN
+F 3 "" H 9500 3000 60  0000 C CNN
+	1    9500 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_J1
+U 1 1 00000280
+P 9150 3250
+F 0 "D_J1" V 9196 3171 50  0000 R CNN
+F 1 "D" V 9095 3171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 9150 3250 50  0001 C CNN
+F 3 "~" H 9150 3250 50  0001 C CNN
+	1    9150 3250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9200 3000 9150 3000
+Wire Wire Line
+	9150 3000 9150 3100
+Connection ~ 9800 3000
+Connection ~ 9150 3400
+$Comp
+L keyboard_parts:KEYSW K_K1
+U 1 1 00000291
+P 10500 3000
+F 0 "K_K1" H 10500 3233 60  0000 C CNN
+F 1 "KEYSW" H 10500 2900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 10500 3000 60  0001 C CNN
+F 3 "" H 10500 3000 60  0000 C CNN
+	1    10500 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_K1
+U 1 1 00000290
+P 10150 3250
+F 0 "D_K1" V 10196 3171 50  0000 R CNN
+F 1 "D" V 10095 3171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 10150 3250 50  0001 C CNN
+F 3 "~" H 10150 3250 50  0001 C CNN
+	1    10150 3250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10200 3000 10150 3000
+Wire Wire Line
+	10150 3000 10150 3100
+Connection ~ 10800 3000
+Connection ~ 10150 3400
+$Comp
+L keyboard_parts:KEYSW K_L1
+U 1 1 000002A1
+P 11500 3000
+F 0 "K_L1" H 11500 3233 60  0000 C CNN
+F 1 "KEYSW" H 11500 2900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 11500 3000 60  0001 C CNN
+F 3 "" H 11500 3000 60  0000 C CNN
+	1    11500 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_L1
+U 1 1 000002A0
+P 11150 3250
+F 0 "D_L1" V 11196 3171 50  0000 R CNN
+F 1 "D" V 11095 3171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 11150 3250 50  0001 C CNN
+F 3 "~" H 11150 3250 50  0001 C CNN
+	1    11150 3250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	11200 3000 11150 3000
+Wire Wire Line
+	11150 3000 11150 3100
+Connection ~ 11800 3000
+Connection ~ 11150 3400
+$Comp
+L keyboard_parts:KEYSW K_SEMIC1
+U 1 1 000002B1
+P 12500 3000
+F 0 "K_SEMIC1" H 12500 3233 60  0000 C CNN
+F 1 "KEYSW" H 12500 2900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 12500 3000 60  0001 C CNN
+F 3 "" H 12500 3000 60  0000 C CNN
+	1    12500 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_SEMIC1
+U 1 1 000002B0
+P 12150 3250
+F 0 "D_SEMIC1" V 12196 3171 50  0000 R CNN
+F 1 "D" V 12095 3171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 12150 3250 50  0001 C CNN
+F 3 "~" H 12150 3250 50  0001 C CNN
+	1    12150 3250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	12200 3000 12150 3000
+Wire Wire Line
+	12150 3000 12150 3100
+Connection ~ 12800 3000
+Connection ~ 12150 3400
+$Comp
+L keyboard_parts:KEYSW K_QUOTE1
+U 1 1 000002C1
+P 13500 3000
+F 0 "K_QUOTE1" H 13500 3233 60  0000 C CNN
+F 1 "KEYSW" H 13500 2900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 13500 3000 60  0001 C CNN
+F 3 "" H 13500 3000 60  0000 C CNN
+	1    13500 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_QUOTE1
+U 1 1 000002C0
+P 13150 3250
+F 0 "D_QUOTE1" V 13196 3171 50  0000 R CNN
+F 1 "D" V 13095 3171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 13150 3250 50  0001 C CNN
+F 3 "~" H 13150 3250 50  0001 C CNN
+	1    13150 3250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	13200 3000 13150 3000
+Wire Wire Line
+	13150 3000 13150 3100
+Connection ~ 13800 3000
+Connection ~ 13150 3400
+$Comp
+L keyboard_parts:KEYSW K_ENTER1
+U 1 1 000002D1
+P 14500 3000
+F 0 "K_ENTER1" H 14500 3233 60  0000 C CNN
+F 1 "KEYSW" H 14500 2900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-2.25U-NoLED" H 14500 3000 60  0001 C CNN
+F 3 "" H 14500 3000 60  0000 C CNN
+	1    14500 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_ENTER1
+U 1 1 000002D0
+P 14150 3250
+F 0 "D_ENTER1" V 14196 3171 50  0000 R CNN
+F 1 "D" V 14095 3171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 14150 3250 50  0001 C CNN
+F 3 "~" H 14150 3250 50  0001 C CNN
+	1    14150 3250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	14200 3000 14150 3000
+Wire Wire Line
+	14150 3000 14150 3100
+Connection ~ 14800 3000
+Wire Wire Line
+	1150 3400 3150 3400
+Text GLabel 900  4400 0    50   Input ~ 0
+row3
+$Comp
+L keyboard_parts:KEYSW K_SHIFT2
+U 1 1 000002E1
+P 2500 4000
+F 0 "K_SHIFT2" H 2500 4233 60  0000 C CNN
+F 1 "KEYSW" H 2500 3900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-2.25U-NoLED" H 2500 4000 60  0001 C CNN
+F 3 "" H 2500 4000 60  0000 C CNN
+	1    2500 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_SHIFT2
+U 1 1 000002E0
+P 2150 4250
+F 0 "D_SHIFT2" V 2196 4171 50  0000 R CNN
+F 1 "D" V 2095 4171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 2150 4250 50  0001 C CNN
+F 3 "~" H 2150 4250 50  0001 C CNN
+	1    2150 4250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2200 4000 2150 4000
+Wire Wire Line
+	2150 4000 2150 4100
+Connection ~ 2150 4400
+$Comp
+L keyboard_parts:KEYSW K_Z1
+U 1 1 000002F1
+P 3500 4000
+F 0 "K_Z1" H 3500 4233 60  0000 C CNN
+F 1 "KEYSW" H 3500 3900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 3500 4000 60  0001 C CNN
+F 3 "" H 3500 4000 60  0000 C CNN
+	1    3500 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_Z1
+U 1 1 000002F0
+P 3150 4250
+F 0 "D_Z1" V 3196 4171 50  0000 R CNN
+F 1 "D" V 3095 4171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 3150 4250 50  0001 C CNN
+F 3 "~" H 3150 4250 50  0001 C CNN
+	1    3150 4250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3200 4000 3150 4000
+Wire Wire Line
+	3150 4000 3150 4100
+Connection ~ 3800 4000
+Connection ~ 3150 4400
+$Comp
+L keyboard_parts:KEYSW K_X1
+U 1 1 00000301
+P 4500 4000
+F 0 "K_X1" H 4500 4233 60  0000 C CNN
+F 1 "KEYSW" H 4500 3900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 4500 4000 60  0001 C CNN
+F 3 "" H 4500 4000 60  0000 C CNN
+	1    4500 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_X1
+U 1 1 00000300
+P 4150 4250
+F 0 "D_X1" V 4196 4171 50  0000 R CNN
+F 1 "D" V 4095 4171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 4150 4250 50  0001 C CNN
+F 3 "~" H 4150 4250 50  0001 C CNN
+	1    4150 4250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4200 4000 4150 4000
+Wire Wire Line
+	4150 4000 4150 4100
+Connection ~ 4800 4000
+Connection ~ 4150 4400
+$Comp
+L keyboard_parts:KEYSW K_C1
+U 1 1 00000311
+P 5500 4000
+F 0 "K_C1" H 5500 4233 60  0000 C CNN
+F 1 "KEYSW" H 5500 3900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 5500 4000 60  0001 C CNN
+F 3 "" H 5500 4000 60  0000 C CNN
+	1    5500 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_C1
+U 1 1 00000310
+P 5150 4250
+F 0 "D_C1" V 5196 4171 50  0000 R CNN
+F 1 "D" V 5095 4171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 5150 4250 50  0001 C CNN
+F 3 "~" H 5150 4250 50  0001 C CNN
+	1    5150 4250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5200 4000 5150 4000
+Wire Wire Line
+	5150 4000 5150 4100
+Connection ~ 5150 4400
+$Comp
+L keyboard_parts:KEYSW K_V1
+U 1 1 00000321
+P 6500 4000
+F 0 "K_V1" H 6500 4233 60  0000 C CNN
+F 1 "KEYSW" H 6500 3900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 6500 4000 60  0001 C CNN
+F 3 "" H 6500 4000 60  0000 C CNN
+	1    6500 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_V1
+U 1 1 00000320
+P 6150 4250
+F 0 "D_V1" V 6196 4171 50  0000 R CNN
+F 1 "D" V 6095 4171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 6150 4250 50  0001 C CNN
+F 3 "~" H 6150 4250 50  0001 C CNN
+	1    6150 4250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6200 4000 6150 4000
+Wire Wire Line
+	6150 4000 6150 4100
+Connection ~ 6150 4400
+$Comp
+L keyboard_parts:KEYSW K_B1
+U 1 1 00000331
+P 7500 4000
+F 0 "K_B1" H 7500 4233 60  0000 C CNN
+F 1 "KEYSW" H 7500 3900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 7500 4000 60  0001 C CNN
+F 3 "" H 7500 4000 60  0000 C CNN
+	1    7500 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_B1
+U 1 1 00000330
+P 7150 4250
+F 0 "D_B1" V 7196 4171 50  0000 R CNN
+F 1 "D" V 7095 4171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 7150 4250 50  0001 C CNN
+F 3 "~" H 7150 4250 50  0001 C CNN
+	1    7150 4250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7200 4000 7150 4000
+Wire Wire Line
+	7150 4000 7150 4100
+Connection ~ 7150 4400
+$Comp
+L keyboard_parts:KEYSW K_N1
+U 1 1 00000341
+P 8500 4000
+F 0 "K_N1" H 8500 4233 60  0000 C CNN
+F 1 "KEYSW" H 8500 3900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 8500 4000 60  0001 C CNN
+F 3 "" H 8500 4000 60  0000 C CNN
+	1    8500 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_N1
+U 1 1 00000340
+P 8150 4250
+F 0 "D_N1" V 8196 4171 50  0000 R CNN
+F 1 "D" V 8095 4171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 8150 4250 50  0001 C CNN
+F 3 "~" H 8150 4250 50  0001 C CNN
+	1    8150 4250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8200 4000 8150 4000
+Wire Wire Line
+	8150 4000 8150 4100
+Connection ~ 8800 4000
+Connection ~ 8150 4400
+$Comp
+L keyboard_parts:KEYSW K_M1
+U 1 1 00000351
+P 9500 4000
+F 0 "K_M1" H 9500 4233 60  0000 C CNN
+F 1 "KEYSW" H 9500 3900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 9500 4000 60  0001 C CNN
+F 3 "" H 9500 4000 60  0000 C CNN
+	1    9500 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_M1
+U 1 1 00000350
+P 9150 4250
+F 0 "D_M1" V 9196 4171 50  0000 R CNN
+F 1 "D" V 9095 4171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 9150 4250 50  0001 C CNN
+F 3 "~" H 9150 4250 50  0001 C CNN
+	1    9150 4250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9200 4000 9150 4000
+Wire Wire Line
+	9150 4000 9150 4100
+Connection ~ 9150 4400
+$Comp
+L keyboard_parts:KEYSW K_COMMA1
+U 1 1 00000361
+P 10500 4000
+F 0 "K_COMMA1" H 10500 4233 60  0000 C CNN
+F 1 "KEYSW" H 10500 3900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 10500 4000 60  0001 C CNN
+F 3 "" H 10500 4000 60  0000 C CNN
+	1    10500 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_COMMA1
+U 1 1 00000360
+P 10150 4250
+F 0 "D_COMMA1" V 10196 4171 50  0000 R CNN
+F 1 "D" V 10095 4171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 10150 4250 50  0001 C CNN
+F 3 "~" H 10150 4250 50  0001 C CNN
+	1    10150 4250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10200 4000 10150 4000
+Wire Wire Line
+	10150 4000 10150 4100
+Connection ~ 10150 4400
+$Comp
+L keyboard_parts:KEYSW K_DOT1
+U 1 1 00000371
+P 11500 4000
+F 0 "K_DOT1" H 11500 4233 60  0000 C CNN
+F 1 "KEYSW" H 11500 3900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 11500 4000 60  0001 C CNN
+F 3 "" H 11500 4000 60  0000 C CNN
+	1    11500 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_DOT1
+U 1 1 00000370
+P 11150 4250
+F 0 "D_DOT1" V 11196 4171 50  0000 R CNN
+F 1 "D" V 11095 4171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 11150 4250 50  0001 C CNN
+F 3 "~" H 11150 4250 50  0001 C CNN
+	1    11150 4250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	11200 4000 11150 4000
+Wire Wire Line
+	11150 4000 11150 4100
+Connection ~ 11150 4400
+$Comp
+L keyboard_parts:KEYSW K_SLASH1
+U 1 1 00000381
+P 12500 4000
+F 0 "K_SLASH1" H 12500 4233 60  0000 C CNN
+F 1 "KEYSW" H 12500 3900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 12500 4000 60  0001 C CNN
+F 3 "" H 12500 4000 60  0000 C CNN
+	1    12500 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_SLASH1
+U 1 1 00000380
+P 12150 4250
+F 0 "D_SLASH1" V 12196 4171 50  0000 R CNN
+F 1 "D" V 12095 4171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 12150 4250 50  0001 C CNN
+F 3 "~" H 12150 4250 50  0001 C CNN
+	1    12150 4250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	12200 4000 12150 4000
+Wire Wire Line
+	12150 4000 12150 4100
+Connection ~ 12150 4400
+$Comp
+L keyboard_parts:KEYSW K_SHIFT1
+U 1 1 00000391
+P 14500 4000
+F 0 "K_SHIFT1" H 14500 4233 60  0000 C CNN
+F 1 "KEYSW" H 14500 3900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1.75U-NoLED" H 14500 4000 60  0001 C CNN
+F 3 "" H 14500 4000 60  0000 C CNN
+	1    14500 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_SHIFT1
+U 1 1 00000390
+P 14150 4250
+F 0 "D_SHIFT1" V 14196 4171 50  0000 R CNN
+F 1 "D" V 14095 4171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 14150 4250 50  0001 C CNN
+F 3 "~" H 14150 4250 50  0001 C CNN
+	1    14150 4250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	14200 4000 14150 4000
+Wire Wire Line
+	14150 4000 14150 4100
+Connection ~ 14800 4000
+Connection ~ 14150 4400
+$Comp
+L keyboard_parts:KEYSW K_FN1
+U 1 1 000003A1
+P 15500 4000
+F 0 "K_FN1" H 15500 4233 60  0000 C CNN
+F 1 "KEYSW" H 15500 3900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 15500 4000 60  0001 C CNN
+F 3 "" H 15500 4000 60  0000 C CNN
+	1    15500 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_FN1
+U 1 1 000003A0
+P 15150 4250
+F 0 "D_FN1" V 15196 4171 50  0000 R CNN
+F 1 "D" V 15095 4171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 15150 4250 50  0001 C CNN
+F 3 "~" H 15150 4250 50  0001 C CNN
+	1    15150 4250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	15200 4000 15150 4000
+Wire Wire Line
+	15150 4000 15150 4100
+Connection ~ 15800 4000
+Connection ~ 15150 4400
+$Comp
+L keyboard_parts:KEYSW K_UP1
+U 1 1 000003B1
+P 16500 4000
+F 0 "K_UP1" H 16500 4233 60  0000 C CNN
+F 1 "KEYSW" H 16500 3900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 16500 4000 60  0001 C CNN
+F 3 "" H 16500 4000 60  0000 C CNN
+	1    16500 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_UP1
+U 1 1 000003B0
+P 16150 4250
+F 0 "D_UP1" V 16196 4171 50  0000 R CNN
+F 1 "D" V 16095 4171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 16150 4250 50  0001 C CNN
+F 3 "~" H 16150 4250 50  0001 C CNN
+	1    16150 4250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	16200 4000 16150 4000
+Wire Wire Line
+	16150 4000 16150 4100
+Connection ~ 16800 4000
+Text GLabel 900  5400 0    50   Input ~ 0
+row4
+Wire Wire Line
+	900  5400 1150 5400
+$Comp
+L keyboard_parts:KEYSW K_CTRL1
+U 1 1 000003C1
+P 1500 5000
+F 0 "K_CTRL1" H 1500 5233 60  0000 C CNN
+F 1 "KEYSW" H 1500 4900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1.5U-NoLED" H 1500 5000 60  0001 C CNN
+F 3 "" H 1500 5000 60  0000 C CNN
+	1    1500 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_CTRL1
+U 1 1 000003C0
+P 1150 5250
+F 0 "D_CTRL1" V 1196 5171 50  0000 R CNN
+F 1 "D" V 1095 5171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 1150 5250 50  0001 C CNN
+F 3 "~" H 1150 5250 50  0001 C CNN
+	1    1150 5250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1200 5000 1150 5000
+Wire Wire Line
+	1150 5000 1150 5100
+Connection ~ 1150 5400
+$Comp
+L keyboard_parts:KEYSW K_WIN1
+U 1 1 000003D1
+P 3500 5000
+F 0 "K_WIN1" H 3500 5233 60  0000 C CNN
+F 1 "KEYSW" H 3500 4900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1.25U-NoLED" H 3500 5000 60  0001 C CNN
+F 3 "" H 3500 5000 60  0000 C CNN
+	1    3500 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_WIN1
+U 1 1 000003D0
+P 3150 5250
+F 0 "D_WIN1" V 3196 5171 50  0000 R CNN
+F 1 "D" V 3095 5171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 3150 5250 50  0001 C CNN
+F 3 "~" H 3150 5250 50  0001 C CNN
+	1    3150 5250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3200 5000 3150 5000
+Wire Wire Line
+	3150 5000 3150 5100
+Connection ~ 3150 5400
+$Comp
+L keyboard_parts:KEYSW K_&lt;I2
+U 1 1 000003E1
+P 4500 5000
+F 0 "K_&lt;I2" H 4500 5233 60  0000 C CNN
+F 1 "KEYSW" H 4500 4900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1.5U-NoLED" H 4500 5000 60  0001 C CNN
+F 3 "" H 4500 5000 60  0000 C CNN
+	1    4500 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_&lt;I2
+U 1 1 000003E0
+P 4150 5250
+F 0 "D_&lt;I2" V 4196 5171 50  0000 R CNN
+F 1 "D" V 4095 5171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 4150 5250 50  0001 C CNN
+F 3 "~" H 4150 5250 50  0001 C CNN
+	1    4150 5250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4200 5000 4150 5000
+Wire Wire Line
+	4150 5000 4150 5100
+Connection ~ 4150 5400
+$Comp
+L keyboard_parts:KEYSW K_SPACE1
+U 1 1 000003F1
+P 8500 5000
+F 0 "K_SPACE1" H 8500 5233 60  0000 C CNN
+F 1 "KEYSW" H 8500 4900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-7U-NoLED" H 8500 5000 60  0001 C CNN
+F 3 "" H 8500 5000 60  0000 C CNN
+	1    8500 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_SPACE1
+U 1 1 000003F0
+P 8150 5250
+F 0 "D_SPACE1" V 8196 5171 50  0000 R CNN
+F 1 "D" V 8095 5171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 8150 5250 50  0001 C CNN
+F 3 "~" H 8150 5250 50  0001 C CNN
+	1    8150 5250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8200 5000 8150 5000
+Wire Wire Line
+	8150 5000 8150 5100
+Connection ~ 8150 5400
+$Comp
+L keyboard_parts:KEYSW K_&lt;I3
+U 1 1 00000401
+P 13500 5000
+F 0 "K_&lt;I3" H 13500 5233 60  0000 C CNN
+F 1 "KEYSW" H 13500 4900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1.5U-NoLED" H 13500 5000 60  0001 C CNN
+F 3 "" H 13500 5000 60  0000 C CNN
+	1    13500 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_&lt;I3
+U 1 1 00000400
+P 13150 5250
+F 0 "D_&lt;I3" V 13196 5171 50  0000 R CNN
+F 1 "D" V 13095 5171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 13150 5250 50  0001 C CNN
+F 3 "~" H 13150 5250 50  0001 C CNN
+	1    13150 5250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	13200 5000 13150 5000
+Wire Wire Line
+	13150 5000 13150 5100
+Connection ~ 13150 5400
+$Comp
+L keyboard_parts:KEYSW K_ALT1
+U 1 1 00000411
+P 14500 5000
+F 0 "K_ALT1" H 14500 5233 60  0000 C CNN
+F 1 "KEYSW" H 14500 4900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1.25U-NoLED" H 14500 5000 60  0001 C CNN
+F 3 "" H 14500 5000 60  0000 C CNN
+	1    14500 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_ALT1
+U 1 1 00000410
+P 14150 5250
+F 0 "D_ALT1" V 14196 5171 50  0000 R CNN
+F 1 "D" V 14095 5171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 14150 5250 50  0001 C CNN
+F 3 "~" H 14150 5250 50  0001 C CNN
+	1    14150 5250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	14200 5000 14150 5000
+Wire Wire Line
+	14150 5000 14150 5100
+Connection ~ 14150 5400
+$Comp
+L keyboard_parts:KEYSW K_LEFT1
+U 1 1 00000421
+P 15500 5000
+F 0 "K_LEFT1" H 15500 5233 60  0000 C CNN
+F 1 "KEYSW" H 15500 4900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 15500 5000 60  0001 C CNN
+F 3 "" H 15500 5000 60  0000 C CNN
+	1    15500 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_LEFT1
+U 1 1 00000420
+P 15150 5250
+F 0 "D_LEFT1" V 15196 5171 50  0000 R CNN
+F 1 "D" V 15095 5171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 15150 5250 50  0001 C CNN
+F 3 "~" H 15150 5250 50  0001 C CNN
+	1    15150 5250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	15200 5000 15150 5000
+Wire Wire Line
+	15150 5000 15150 5100
+Connection ~ 15150 5400
+$Comp
+L keyboard_parts:KEYSW K_DOWN1
+U 1 1 00000431
+P 16500 5000
+F 0 "K_DOWN1" H 16500 5233 60  0000 C CNN
+F 1 "KEYSW" H 16500 4900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 16500 5000 60  0001 C CNN
+F 3 "" H 16500 5000 60  0000 C CNN
+	1    16500 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_DOWN1
+U 1 1 00000430
+P 16150 5250
+F 0 "D_DOWN1" V 16196 5171 50  0000 R CNN
+F 1 "D" V 16095 5171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 16150 5250 50  0001 C CNN
+F 3 "~" H 16150 5250 50  0001 C CNN
+	1    16150 5250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	16200 5000 16150 5000
+Wire Wire Line
+	16150 5000 16150 5100
+Connection ~ 16150 5400
+$Comp
+L keyboard_parts:KEYSW K_RIGHT1
+U 1 1 00000441
+P 17500 5000
+F 0 "K_RIGHT1" H 17500 5233 60  0000 C CNN
+F 1 "KEYSW" H 17500 4900 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 17500 5000 60  0001 C CNN
+F 3 "" H 17500 5000 60  0000 C CNN
+	1    17500 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D_RIGHT1
+U 1 1 00000440
+P 17150 5250
+F 0 "D_RIGHT1" V 17196 5171 50  0000 R CNN
+F 1 "D" V 17095 5171 50  0000 R CNN
+F 2 "acheron_Components:D_SOD-123" H 17150 5250 50  0001 C CNN
+F 3 "~" H 17150 5250 50  0001 C CNN
+	1    17150 5250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	17200 5000 17150 5000
+Wire Wire Line
+	17150 5000 17150 5100
+Wire Wire Line
+	1150 5400 3150 5400
+Wire Wire Line
+	1800 5000 1800 3000
+Wire Wire Line
+	2800 4000 2800 1000
+Wire Wire Line
+	3800 5000 3800 4000
+Wire Wire Line
+	4800 5000 4800 4000
+Wire Wire Line
+	5800 4000 5800 3000
+Wire Wire Line
+	6800 4000 6800 3000
+Wire Wire Line
+	7800 4000 7800 3000
+Wire Wire Line
+	8800 5000 8800 4000
+Wire Wire Line
+	9800 4000 9800 3000
+Wire Wire Line
+	10800 4000 10800 3000
+Wire Wire Line
+	11800 4000 11800 3000
+Wire Wire Line
+	12800 4000 12800 3000
+Wire Wire Line
+	13800 5000 13800 3000
+Wire Wire Line
+	14800 5000 14800 4000
+Wire Wire Line
+	15800 5000 15800 4000
+Wire Wire Line
+	16800 5000 16800 4000
+Wire Wire Line
+	17800 5000 17800 2000
+Wire Wire Line
+	2150 1400 3150 1400
+Wire Wire Line
+	3150 1400 4150 1400
+Wire Wire Line
+	4150 1400 5150 1400
+Wire Wire Line
+	5150 1400 6150 1400
+Wire Wire Line
+	6150 1400 7150 1400
+Wire Wire Line
+	7150 1400 8150 1400
+Wire Wire Line
+	8150 1400 9150 1400
+Wire Wire Line
+	9150 1400 10150 1400
+Wire Wire Line
+	10150 1400 11150 1400
+Wire Wire Line
+	11150 1400 12150 1400
+Wire Wire Line
+	12150 1400 13150 1400
+Wire Wire Line
+	13150 1400 14150 1400
+Wire Wire Line
+	14150 1400 15150 1400
+Wire Wire Line
+	15150 1400 16150 1400
+Wire Wire Line
+	16150 1400 17150 1400
+Wire Wire Line
+	1800 2000 1800 1000
+Wire Wire Line
+	3800 2000 3800 1000
+Wire Wire Line
+	3150 2400 4150 2400
+Wire Wire Line
+	4800 2000 4800 1000
+Wire Wire Line
+	4150 2400 5150 2400
+Wire Wire Line
+	5800 2000 5800 1000
+Wire Wire Line
+	5150 2400 6150 2400
+Wire Wire Line
+	6800 2000 6800 1000
+Wire Wire Line
+	6150 2400 7150 2400
+Wire Wire Line
+	7800 2000 7800 1000
+Wire Wire Line
+	7150 2400 8150 2400
+Wire Wire Line
+	8800 2000 8800 1000
+Wire Wire Line
+	8150 2400 9150 2400
+Wire Wire Line
+	9800 2000 9800 1000
+Wire Wire Line
+	9150 2400 10150 2400
+Wire Wire Line
+	10800 2000 10800 1000
+Wire Wire Line
+	10150 2400 11150 2400
+Wire Wire Line
+	11800 2000 11800 1000
+Wire Wire Line
+	11150 2400 12150 2400
+Wire Wire Line
+	12800 2000 12800 1000
+Wire Wire Line
+	12150 2400 13150 2400
+Wire Wire Line
+	13800 2000 13800 1000
+Wire Wire Line
+	13150 2400 14150 2400
+Wire Wire Line
+	14800 2000 14800 1000
+Wire Wire Line
+	14150 2400 15150 2400
+Wire Wire Line
+	15800 2000 15800 1000
+Wire Wire Line
+	15150 2400 16150 2400
+Wire Wire Line
+	16800 2000 16800 1000
+Wire Wire Line
+	16150 2400 17150 2400
+Wire Wire Line
+	17800 2000 17800 1000
+Wire Wire Line
+	1800 3000 1800 2000
+Wire Wire Line
+	3800 3000 3800 2000
+Wire Wire Line
+	3150 3400 4150 3400
+Wire Wire Line
+	4800 3000 4800 2000
+Wire Wire Line
+	4150 3400 5150 3400
+Wire Wire Line
+	5800 3000 5800 2000
+Wire Wire Line
+	5150 3400 6150 3400
+Wire Wire Line
+	6800 3000 6800 2000
+Wire Wire Line
+	6150 3400 7150 3400
+Wire Wire Line
+	7800 3000 7800 2000
+Wire Wire Line
+	7150 3400 8150 3400
+Wire Wire Line
+	8800 3000 8800 2000
+Wire Wire Line
+	8150 3400 9150 3400
+Wire Wire Line
+	9800 3000 9800 2000
+Wire Wire Line
+	9150 3400 10150 3400
+Wire Wire Line
+	10800 3000 10800 2000
+Wire Wire Line
+	10150 3400 11150 3400
+Wire Wire Line
+	11800 3000 11800 2000
+Wire Wire Line
+	11150 3400 12150 3400
+Wire Wire Line
+	12800 3000 12800 2000
+Wire Wire Line
+	12150 3400 13150 3400
+Wire Wire Line
+	13800 3000 13800 2000
+Wire Wire Line
+	13150 3400 14150 3400
+Wire Wire Line
+	14800 3000 14800 2000
+Wire Wire Line
+	2150 4400 3150 4400
+Wire Wire Line
+	3800 4000 3800 3000
+Wire Wire Line
+	3150 4400 4150 4400
+Wire Wire Line
+	4800 4000 4800 3000
+Wire Wire Line
+	4150 4400 5150 4400
+Wire Wire Line
+	5150 4400 6150 4400
+Wire Wire Line
+	6150 4400 7150 4400
+Wire Wire Line
+	7150 4400 8150 4400
+Wire Wire Line
+	8800 4000 8800 3000
+Wire Wire Line
+	8150 4400 9150 4400
+Wire Wire Line
+	9150 4400 10150 4400
+Wire Wire Line
+	10150 4400 11150 4400
+Wire Wire Line
+	11150 4400 12150 4400
+Wire Wire Line
+	12150 4400 14150 4400
+Wire Wire Line
+	14800 4000 14800 3000
+Wire Wire Line
+	14150 4400 15150 4400
+Wire Wire Line
+	15800 4000 15800 2000
+Wire Wire Line
+	15150 4400 16150 4400
+Wire Wire Line
+	16800 4000 16800 2000
+Wire Wire Line
+	3150 5400 4150 5400
+Wire Wire Line
+	4150 5400 8150 5400
+Wire Wire Line
+	8150 5400 13150 5400
+Wire Wire Line
+	13150 5400 14150 5400
+Wire Wire Line
+	14150 5400 15150 5400
+Wire Wire Line
+	15150 5400 16150 5400
+Wire Wire Line
+	16150 5400 17150 5400
+Wire Wire Line
+	900  4400 2150 4400
+Wire Wire Line
+	7350 7150 7500 7150
+Wire Wire Line
+	7350 7250 7500 7250
+Text Label 9650 6950 0    50   ~ 0
+Vcc
+Text Label 7500 8250 2    50   ~ 0
+Vcc
+Text Label 9650 8950 0    50   ~ 0
+Vcc
+Text Label 9650 7950 0    50   ~ 0
+Vcc
+$Comp
+L component:GND #PWR0101
+U 1 1 5DACF747
+P 9700 7050
+F 0 "#PWR0101" H 9700 7050 30  0001 C CNN
+F 1 "GND" H 9700 6980 30  0001 C CNN
+F 2 "" H 9700 7050 50  0001 C CNN
+F 3 "" H 9700 7050 50  0001 C CNN
+	1    9700 7050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L component:GND #PWR0102
+U 1 1 5DACFA36
+P 9700 7850
+F 0 "#PWR0102" H 9700 7850 30  0001 C CNN
+F 1 "GND" H 9700 7780 30  0001 C CNN
+F 2 "" H 9700 7850 50  0001 C CNN
+F 3 "" H 9700 7850 50  0001 C CNN
+	1    9700 7850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L component:GND #PWR0103
+U 1 1 5DACFDB3
+P 9700 9050
+F 0 "#PWR0103" H 9700 9050 30  0001 C CNN
+F 1 "GND" H 9700 8980 30  0001 C CNN
+F 2 "" H 9700 9050 50  0001 C CNN
+F 3 "" H 9700 9050 50  0001 C CNN
+	1    9700 9050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L component:GND #PWR0104
+U 1 1 5DAD03F6
+P 7450 8350
+F 0 "#PWR0104" H 7450 8350 30  0001 C CNN
+F 1 "GND" H 7450 8280 30  0001 C CNN
+F 2 "" H 7450 8350 50  0001 C CNN
+F 3 "" H 7450 8350 50  0001 C CNN
+	1    7450 8350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9650 8050 9900 8050
+$Comp
+L component:RESISTOR R2
+U 1 1 5DAE5F06
+P 10150 8050
+F 0 "R2" V 10050 8050 50  0000 C CNN
+F 1 "10K" V 10150 8050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10150 8050 50  0001 C CNN
+F 3 "" H 10150 8050 50  0001 C CNN
+	1    10150 8050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6850 6850 6850 7050
+Connection ~ 6850 7050
+Wire Wire Line
+	6850 7050 7500 7050
+$Comp
+L Device:Crystal_GND24_Small X1
+U 1 1 5DB10D75
+P 6650 8550
+F 0 "X1" H 6700 8450 50  0000 L CNN
+F 1 "Crystal_GND24_Small" H 6300 8750 50  0000 L CNN
+F 2 "acheron_Components:Crystal_SMD_5032-4Pin-HandSolder" H 6650 8550 50  0001 C CNN
+F 3 "~" H 6650 8550 50  0001 C CNN
+	1    6650 8550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 8550 7000 8550
+Wire Wire Line
+	6550 8300 7050 8300
+Wire Wire Line
+	7050 8300 7050 8450
+Wire Wire Line
+	7050 8450 7500 8450
+Wire Wire Line
+	6550 8300 6550 8550
+Wire Wire Line
+	6650 8650 6650 8675
+Connection ~ 6650 8675
+Wire Wire Line
+	6650 8675 6650 8750
+Wire Wire Line
+	6650 8450 6650 8425
+Wire Wire Line
+	6650 8400 6850 8400
+Wire Wire Line
+	6850 8400 6850 8750
+Wire Wire Line
+	6850 8750 6650 8750
+Connection ~ 6650 8425
+Wire Wire Line
+	6650 8425 6650 8400
+Connection ~ 6650 8750
+Wire Wire Line
+	6650 8750 6650 8950
+$Comp
+L Device:C_Small C1
+U 1 1 5DB695E9
+P 6300 8650
+F 0 "C1" H 6392 8696 50  0000 L CNN
+F 1 "22p" H 6392 8605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6300 8650 50  0001 C CNN
+F 3 "~" H 6300 8650 50  0001 C CNN
+	1    6300 8650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C2
+U 1 1 5DB69A33
+P 7000 8650
+F 0 "C2" H 7092 8696 50  0000 L CNN
+F 1 "22p" H 7092 8605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7000 8650 50  0001 C CNN
+F 3 "~" H 7000 8650 50  0001 C CNN
+	1    7000 8650
+	1    0    0    -1  
+$EndComp
+Connection ~ 7000 8550
+Wire Wire Line
+	7000 8550 7500 8550
+Wire Wire Line
+	6550 8550 6300 8550
+Connection ~ 6550 8550
+Wire Wire Line
+	6300 8750 6300 8950
+Wire Wire Line
+	6300 8950 6650 8950
+Wire Wire Line
+	7000 8950 7000 8750
+Connection ~ 6650 8950
+Wire Wire Line
+	6650 8950 7000 8950
+$Comp
+L component:GND #PWR0105
+U 1 1 5DB99822
+P 6650 9000
+F 0 "#PWR0105" H 6650 9000 30  0001 C CNN
+F 1 "GND" H 6650 8930 30  0001 C CNN
+F 2 "" H 6650 9000 50  0001 C CNN
+F 3 "" H 6650 9000 50  0001 C CNN
+	1    6650 9000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C4
+U 1 1 5DBB3FC2
+P 3000 7500
+F 0 "C4" H 3092 7546 50  0000 L CNN
+F 1 "0.1u" H 3092 7455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3000 7500 50  0001 C CNN
+F 3 "~" H 3000 7500 50  0001 C CNN
+	1    3000 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C3
+U 1 1 5DBCCC1A
+P 2700 7500
+F 0 "C3" H 2792 7546 50  0000 L CNN
+F 1 "0.1u" H 2792 7455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2700 7500 50  0001 C CNN
+F 3 "~" H 2700 7500 50  0001 C CNN
+	1    2700 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C5
+U 1 1 5DBE51B1
+P 3300 7500
+F 0 "C5" H 3392 7546 50  0000 L CNN
+F 1 "0.1u" H 3392 7455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3300 7500 50  0001 C CNN
+F 3 "~" H 3300 7500 50  0001 C CNN
+	1    3300 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C6
+U 1 1 5DBFD74D
+P 3600 7500
+F 0 "C6" H 3692 7546 50  0000 L CNN
+F 1 "0.1u" H 3692 7455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3600 7500 50  0001 C CNN
+F 3 "~" H 3600 7500 50  0001 C CNN
+	1    3600 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C7
+U 1 1 5DC15CE6
+P 3900 7500
+F 0 "C7" H 3992 7546 50  0000 L CNN
+F 1 "4.7u" H 3992 7455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3900 7500 50  0001 C CNN
+F 3 "~" H 3900 7500 50  0001 C CNN
+	1    3900 7500
+	1    0    0    -1  
+$EndComp
+Connection ~ 3300 7400
+Connection ~ 3300 7600
+Connection ~ 3000 7400
+Connection ~ 3000 7600
+Connection ~ 3600 7400
+Connection ~ 3600 7600
+Wire Wire Line
+	3300 7600 3600 7600
+Wire Wire Line
+	3000 7600 3300 7600
+Wire Wire Line
+	2700 7400 3000 7400
+Wire Wire Line
+	3600 7400 3900 7400
+Wire Wire Line
+	3300 7400 3600 7400
+Wire Wire Line
+	3000 7400 3300 7400
+Wire Wire Line
+	2700 7600 3000 7600
+Wire Wire Line
+	2700 7400 2500 7400
+Wire Wire Line
+	3600 7600 3900 7600
+Connection ~ 2700 7400
+Wire Wire Line
+	2700 7600 2500 7600
+Connection ~ 2700 7600
+Text Label 2500 7400 2    50   ~ 0
+Vcc
+$Comp
+L component:GND #PWR0106
+U 1 1 5DCD447B
+P 2500 7650
+F 0 "#PWR0106" H 2500 7650 30  0001 C CNN
+F 1 "GND" H 2500 7580 30  0001 C CNN
+F 2 "" H 2500 7650 50  0001 C CNN
+F 3 "" H 2500 7650 50  0001 C CNN
+	1    2500 7650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 8150 7000 8150
+Wire Wire Line
+	7000 8150 7000 8050
+Wire Wire Line
+	7000 8050 6650 8050
+$Comp
+L keyboard_parts:SW_PUSH RESET1
+U 1 1 5DCF07FE
+P 6250 8050
+F 0 "RESET1" H 6250 8305 50  0000 C CNN
+F 1 "SW_PUSH" H 6250 8214 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_TL3342" H 6250 8050 60  0001 C CNN
+F 3 "" H 6250 8050 60  0000 C CNN
+	1    6250 8050
+	1    0    0    -1  
+$EndComp
+$Comp
+L component:GND #PWR0108
+U 1 1 5DCF0C5F
+P 5950 8100
+F 0 "#PWR0108" H 5950 8100 30  0001 C CNN
+F 1 "GND" H 5950 8030 30  0001 C CNN
+F 2 "" H 5950 8100 50  0001 C CNN
+F 3 "" H 5950 8100 50  0001 C CNN
+	1    5950 8100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 8050 6650 8250
+Wire Wire Line
+	6650 8250 6200 8250
+Connection ~ 6650 8050
+Wire Wire Line
+	6650 8050 6550 8050
+$Comp
+L component:RESISTOR R1
+U 1 1 5DD0C62B
+P 5950 8250
+F 0 "R1" V 6050 8250 50  0000 C CNN
+F 1 "10K" V 5950 8250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5950 8250 50  0001 C CNN
+F 3 "" H 5950 8250 50  0001 C CNN
+	1    5950 8250
+	0    1    1    0   
+$EndComp
+Text Label 5700 8250 2    50   ~ 0
+Vcc
+$Comp
+L Device:C_Small C8
+U 1 1 5DD0EFEF
+P 7100 7550
+F 0 "C8" V 7000 7500 50  0000 C CNN
+F 1 "1u" V 7200 7500 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7100 7550 50  0001 C CNN
+F 3 "~" H 7100 7550 50  0001 C CNN
+	1    7100 7550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7500 7450 7200 7450
+Wire Wire Line
+	7200 7450 7200 7550
+Wire Wire Line
+	6850 7350 6850 7550
+$Comp
+L component:GND #PWR0109
+U 1 1 5DD64142
+P 6850 7600
+F 0 "#PWR0109" H 6850 7600 30  0001 C CNN
+F 1 "GND" H 6850 7530 30  0001 C CNN
+F 2 "" H 6850 7600 50  0001 C CNN
+F 3 "" H 6850 7600 50  0001 C CNN
+	1    6850 7600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 7350 7500 7350
+Wire Wire Line
+	7000 7550 6850 7550
+Connection ~ 6850 7550
+NoConn ~ 9650 7150
+NoConn ~ 9650 7650
+NoConn ~ 9650 7750
+Wire Wire Line
+	7500 7550 7250 7550
+Wire Wire Line
+	7250 7550 7250 7800
+Wire Wire Line
+	7250 7800 7100 7800
+Text Label 7100 7800 2    50   ~ 0
+Vcc
+$Comp
+L component:GND #PWR0110
+U 1 1 5DE306C9
+P 6550 7450
+F 0 "#PWR0110" H 6550 7450 30  0001 C CNN
+F 1 "GND" H 6550 7380 30  0001 C CNN
+F 2 "" H 6550 7450 50  0001 C CNN
+F 3 "" H 6550 7450 50  0001 C CNN
+	1    6550 7450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6500 7050 6850 7050
+Wire Wire Line
+	6500 7150 7050 7150
+Wire Wire Line
+	6500 7250 7050 7250
+$Comp
+L component:GND #PWR0111
+U 1 1 5DE89376
+P 10400 8100
+F 0 "#PWR0111" H 10400 8100 30  0001 C CNN
+F 1 "GND" H 10400 8030 30  0001 C CNN
+F 2 "" H 10400 8100 50  0001 C CNN
+F 3 "" H 10400 8100 50  0001 C CNN
+	1    10400 8100
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
