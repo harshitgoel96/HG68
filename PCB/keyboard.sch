@@ -70,17 +70,6 @@ col15
 Text GLabel 9650 7550 2    50   Input ~ 0
 col16
 $Comp
-L keyboard_parts:USB_mini_micro_B J1
-U 1 1 000014A1
-P 6350 7200
-F 0 "J1" H 6232 7491 60  0000 C CNN
-F 1 "USB_mini_micro_B" H 6200 7400 60  0001 C CNN
-F 2 "keyboard_parts:USB_miniB_hirose_5S8" H 6300 7200 60  0001 C CNN
-F 3 "" H 6300 7200 60  0000 C CNN
-	1    6350 7200
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R3
 U 1 1 000037B1
 P 7200 7150
@@ -2684,17 +2673,6 @@ Wire Wire Line
 	7250 7800 7100 7800
 Text Label 7100 7800 2    50   ~ 0
 Vcc
-$Comp
-L component:GND #PWR0110
-U 1 1 5DE306C9
-P 6550 7450
-F 0 "#PWR0110" H 6550 7450 30  0001 C CNN
-F 1 "GND" H 6550 7380 30  0001 C CNN
-F 2 "" H 6550 7450 50  0001 C CNN
-F 3 "" H 6550 7450 50  0001 C CNN
-	1    6550 7450
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	6500 7050 6850 7050
 Wire Wire Line
@@ -2900,4 +2878,158 @@ Wire Wire Line
 Wire Wire Line
 	14150 750  14150 1000
 Connection ~ 14150 1000
+Wire Wire Line
+	3250 8350 3250 8400
+Wire Wire Line
+	3250 8400 3350 8400
+Connection ~ 3250 8400
+Wire Wire Line
+	3100 8850 3400 8850
+Wire Wire Line
+	3100 8250 3400 8250
+$Comp
+L Power_Protection_esd:USBLC6-2SC6 ESD1
+U 1 1 5DD11E7B
+P 5050 10050
+F 0 "ESD1" H 5050 10728 50  0000 C CNN
+F 1 "USBLC6-2SC6" H 5050 10637 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 4300 10450 50  0001 C CNN
+F 3 "" H 5250 10400 50  0001 C CNN
+	1    5050 10050
+	1    0    0    -1  
+$EndComp
+Text Label 3350 8400 0    50   ~ 0
+D-_esd_in
+Text Label 3400 8600 0    50   ~ 0
+D+_esd_in
+Text Label 3100 8050 0    50   ~ 0
+VUSB_in
+$Comp
+L Device:R R5
+U 1 1 5DD1505B
+P 3550 8250
+F 0 "R5" V 3450 8250 39  0000 C CNN
+F 1 "5.1k" V 3550 8250 39  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3480 8250 50  0001 C CNN
+F 3 "~" H 3550 8250 50  0001 C CNN
+	1    3550 8250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5DD3A6B4
+P 3550 8850
+F 0 "R6" V 3450 8850 39  0000 C CNN
+F 1 "5.1k" V 3550 8850 39  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3480 8850 50  0001 C CNN
+F 3 "~" H 3550 8850 50  0001 C CNN
+	1    3550 8850
+	0    1    1    0   
+$EndComp
+$Comp
+L component:GND #PWR0112
+U 1 1 5DD635D1
+P 3750 8250
+F 0 "#PWR0112" H 3750 8250 30  0001 C CNN
+F 1 "GND" H 3750 8180 30  0001 C CNN
+F 2 "" H 3750 8250 50  0001 C CNN
+F 3 "" H 3750 8250 50  0001 C CNN
+	1    3750 8250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L component:GND #PWR0113
+U 1 1 5DD6393D
+P 3750 8850
+F 0 "#PWR0113" H 3750 8850 30  0001 C CNN
+F 1 "GND" H 3750 8780 30  0001 C CNN
+F 2 "" H 3750 8850 50  0001 C CNN
+F 3 "" H 3750 8850 50  0001 C CNN
+	1    3750 8850
+	0    -1   -1   0   
+$EndComp
+Text Label 5050 9550 0    50   ~ 0
+VUSB_in
+Text Label 4550 10150 2    50   ~ 0
+D-_esd_in
+Text Label 5550 10150 0    50   ~ 0
+D+_esd_in
+Text Label 5550 9950 0    50   ~ 0
+D+
+Text Label 4550 9950 2    50   ~ 0
+D-
+$Comp
+L component:GND #PWR0114
+U 1 1 5DDD86B6
+P 5050 10600
+F 0 "#PWR0114" H 5050 10600 30  0001 C CNN
+F 1 "GND" H 5050 10530 30  0001 C CNN
+F 2 "" H 5050 10600 50  0001 C CNN
+F 3 "" H 5050 10600 50  0001 C CNN
+	1    5050 10600
+	1    0    0    -1  
+$EndComp
+Text Label 6500 7150 2    50   ~ 0
+D-
+Text Label 6500 7250 2    50   ~ 0
+D+
+Text Label 6500 7050 2    50   ~ 0
+VUSB_in
+$Comp
+L Type-C:HRO-TYPE-C-31-M-12 USB1
+U 1 1 5DE2A8C5
+P 3000 8500
+F 0 "USB1" H 2831 9297 60  0000 C CNN
+F 1 "HRO-TYPE-C-31-M-12" H 2831 9191 60  0000 C CNN
+F 2 "usbc_footprint:HRO-TYPE-C-31-M-12" H 3000 8500 60  0001 C CNN
+F 3 "" H 3000 8500 60  0001 C CNN
+	1    3000 8500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 8350 3250 8350
+Wire Wire Line
+	3250 8400 3250 8550
+Wire Wire Line
+	3100 8450 3150 8450
+Wire Wire Line
+	3150 8650 3100 8650
+Wire Wire Line
+	3100 8550 3250 8550
+Wire Wire Line
+	3150 8450 3150 8550
+Wire Wire Line
+	3150 8550 3150 8650
+Text Label 3100 8950 0    50   ~ 0
+VUSB_in
+$Comp
+L component:GND #PWR0110
+U 1 1 5DFAA80B
+P 3150 9050
+F 0 "#PWR0110" H 3150 9050 30  0001 C CNN
+F 1 "GND" H 3150 8980 30  0001 C CNN
+F 2 "" H 3150 9050 50  0001 C CNN
+F 3 "" H 3150 9050 50  0001 C CNN
+	1    3150 9050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L component:GND #PWR0115
+U 1 1 5DFAAF61
+P 3150 7950
+F 0 "#PWR0115" H 3150 7950 30  0001 C CNN
+F 1 "GND" H 3150 7880 30  0001 C CNN
+F 2 "" H 3150 7950 50  0001 C CNN
+F 3 "" H 3150 7950 50  0001 C CNN
+	1    3150 7950
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 3100 8150
+NoConn ~ 3100 8750
+NoConn ~ 3100 9150
+Wire Wire Line
+	3150 8650 3400 8650
+Wire Wire Line
+	3400 8650 3400 8600
+Connection ~ 3150 8650
 $EndSCHEMATC
